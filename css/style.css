@@ -67,7 +67,7 @@ ul {
     margin: 0;
 }
 
-a:hover{
+a:hover {
     text-decoration: none;
 }
 
@@ -218,18 +218,9 @@ a:hover{
 /*=========================
 3-Start Login Page Style */
 
-.login-page .contnet-login-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.login-page .contnet-login-page form {
-    width: 40%;
-}
-
 .content-input {
     position: relative;
+    display: inline-block;
 }
 
 .content-input i {
@@ -237,24 +228,22 @@ a:hover{
     left: 0;
     top: 10px;
     bottom: 10px;
+    height: 37px;
+    line-height: 37px;
+    width: 37px;
     text-align: center;
-    padding: 15px;
-    width: 50px;
     box-shadow: 1px 1px 5px var(--mainColor);
 }
 
 .content-input input {
-    margin: 10px 0;
-    padding: 10px 15px 10px 60px;
-    width: 100%;
+    border: none;
+}
+
+.login-page form button {
     border: 1px solid var(--mainColor);
 }
 
-.contnet-login-page form button {
-    border: 1px solid var(--mainColor);
-}
-
-.contnet-login-page form button:hover {
+.login-page form button:hover {
     background-color: transparent;
     color: var(--mainColor);
 }
@@ -263,11 +252,11 @@ a:hover{
     display: none;
 }
 
-.contnet-login-page form button:hover .fa-door-open {
+.login-page form button:hover .fa-door-open {
     display: inline-block;
 }
 
-.contnet-login-page form button:hover .fa-door-closed {
+.login-page form button:hover .fa-door-closed {
     display: none;
 }
 
