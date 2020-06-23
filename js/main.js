@@ -5,14 +5,6 @@ $(function () {
     }
     // End Set Padding 
 
-    // Start Hieght Login Form
-    $(".contnet-height-page").css(
-        "height",
-        $(window).innerHeight() -
-            ($("header").innerHeight() + $("footer").innerHeight())
-    );
-    // End Hieght Login Form
-
     // Start Main Header => Open Nav list
     // Set Var
     const widthNavList = $(".list-nav").innerWidth();
