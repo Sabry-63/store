@@ -1,9 +1,9 @@
 $(function () {
     // Set Padding Bottom In Body
-    if($('footer').hasClass('bottom')){
-        $('body').css('paddingBottom', $('footer').innerHeight())
+    if ($("footer").hasClass("bottom")) {
+        $("body").css("paddingBottom", $("footer").innerHeight());
     }
-    // End Set Padding 
+    // End Set Padding
 
     // Start Main Header => Open Nav list
     // Set Var
@@ -42,8 +42,8 @@ $(function () {
         $(".form-add").hide();
         $(".form-update").show();
     });
-    //  End Function Show From Update Products
 
+    //  End Function Show From Update Products
 
     // Start Function Toggle In Logins Page
     $(".list-logins li a").click(function (e) {
@@ -55,12 +55,9 @@ $(function () {
             .removeClass("block");
         $($(this).data("targets")).fadeIn("slow").siblings().hide();
         // Add Class In Bnt Click
-        $(this)
-            .addClass("login-active")
-            .parent()
-            .siblings()
-            .children()
-            .removeClass("login-active");
+        $(this).addClass("login-active");
+        $(this).parent().siblings().children().removeClass("login-active");
     });
+
     // End Function Toggle In Logins Page
 });
