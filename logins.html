@@ -50,16 +50,21 @@
         <div class="title text-center mb-5">
             <h2 class="title-page">Logins</h2>
         </div>
-
         <div class="container">
             <!-- Start Btns  -->
             <ul class="d-flex justify-content-center my-2 list-logins">
-                <li class="mr-2"><a href="#" class="mainColor p-2  link-longins login-active" data-targets="#today">To
+                <li class="mr-2">
+                    <span id="checked-btn-login" hidden>today</span>
+                    <a href="#" class="mainColor p-2  link-longins today" data-targets="#today">To
                         Day</a></li>
-                <li class="mr-2"><a href="#" class="mainColor p-2 link-longins " data-targets="#byname">Search By
+                <li class="mr-2">
+                    <!-- <span id="checked-btn-login"  hidden>searchbyname</span> -->
+                    <a href="#" class="mainColor p-2 link-longins searchbyname " data-targets="#byname">Search By
                         Name</a>
                 </li>
-                <li class=""><a href="#" class="mainColor p-2 link-longins " data-targets="#bydate">Search By
+                <li class="">
+                    <!-- <span id="checked-btn-login"  hidden>searchbydate</span> -->
+                    <a href="#" class="mainColor p-2 link-longins searchbydate" data-targets="#bydate">Search By
                         Date</a>
                 </li>
             </ul>
@@ -178,42 +183,42 @@
                     </div> <!-- ./centet-by-date -->
                 </form>
                 <!-- End From -->
-                               <!-- ====================
+                <!-- ====================
         Logins Main Table -->
-        <div class="block table-responsive" id="today">
-            <table class="table mt-5 mx-auto table-hover">
-                <thead class="thead-dark">
-                    <tr>
-                        <th scope="col">Id</th>
-                        <th scope="col">User Name</th>
-                        <th scope="col">Time</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>test</td>
-                        <td>05:00</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>test</td>
-                        <td>05:00</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>test</td>
-                        <td>05:00</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>test</td>
-                        <td>05:00</td>
-                    </tr>
-                </tbody>
-            </table> <!-- ./Main Table -->
-        </div>
-        <!-- ====================
+                <div class="block table-responsive" id="today">
+                    <table class="table mt-5 mx-auto table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">User Name</th>
+                                <th scope="col">Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>test</td>
+                                <td>05:00</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>test</td>
+                                <td>05:00</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>test</td>
+                                <td>05:00</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>test</td>
+                                <td>05:00</td>
+                            </tr>
+                        </tbody>
+                    </table> <!-- ./Main Table -->
+                </div>
+                <!-- ====================
         End Logins Main Table -->
             </div>
             <!-- =====================
@@ -233,12 +238,15 @@
     <!-- ================================================
     End Main Footer -->
 
+
+
     <!-- Laibiry-Jquery -->
     <script src="js/vandors/jquery.js"></script>
     <!-- Bootstarp -->
     <script src="js/vandors/bootstrap.min.js"></script>
     <!-- Main Script -->
     <script src="js/main.js"></script>
+    <script src="js/logins.js"></script>
 </body>
 
 </html>
